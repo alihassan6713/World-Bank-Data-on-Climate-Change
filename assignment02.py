@@ -22,6 +22,10 @@ filename = 'mainfile.csv'
 # Call the function to clean the data and store it in a variable
 world_bank_data = clean_world_bank_data(filename)
 
+# Transpose the data
+world_bank_data_t = world_bank_data.transpose()
+print(world_bank_data_t)
+
 # Define the indicators of interest
 total_population = 'Population, total'
 co2_emissions = 'CO2 emissions (kt)'
